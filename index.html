@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <script src="https://kit.fontawesome.com/c6e08dde84.js" crossorigin="anonymous"></script>
+    <title>
+        Weather App
+    </title>
+
+
+
+    <style>
+        body {
+            background-color: #3533a5;
+            /* background-image: url(skydark.jpg); */
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+
+            background-color: #080749;
+            /* background-image: url(blurrain.jpg);*/
+            background-size: cover;
+            border: 3px solid #00cbff;
+            border-radius: 15px;
+            width: 55%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .upper {
+
+            height: 45%;
+        }
+
+        .lower {
+
+            height: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .upper>form {
+            justify-content: center;
+            display: flex;
+            padding: 16px;
+            height: 80%;
+        }
+
+        .inputbar {
+            height: 25px;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+
+        .labl {
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-right: 5px;
+
+        }
+
+        .tempC,
+        .wdetail {
+            color: white;
+
+
+        }
+
+        .tempC {
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        .tdetail {
+            margin-block-end: 52px;
+            width: 17.54em;
+            text-align: center;
+            margin-right: 7px;
+        }
+
+        .svgpic,
+        .detail,
+        .tdetail {
+            border: 1px solid #49e9ff;
+            border-radius: 10px;
+        }
+
+        .Name {
+            color: #ed9817;
+            flex-wrap: nowrap;
+            margin-block-end: 0.5rem;
+        }
+
+        .imag {
+            width: 290px;
+            display: flex;
+            flex-direction: row;
+            height: 7rem;
+        }
+
+        .svgpic {
+            width: 41%;
+        }
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="upper">
+            <form action="" class="form">
+                <input type="search" class="inputbar" id="search" name="search" placeholder="Search for City/Country">
+                <label for="search" class="labl"><i class="fa-solid fa-magnifying-glass" id="submit"
+                        style="cursor: pointer; padding-left: 5px;"></i></label>
+            </form>
+
+        </div>
+        <div class="lower" id="weather">
+            <!----
+            <div class="imag">
+                <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="icon-png">
+            </div>
+            <div class="tdetail">
+                <h2 class="tempC">32 C</h2>
+                <h2 class="wdetail">Clear Sky</h2>
+            </div>
+
+        -->
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
